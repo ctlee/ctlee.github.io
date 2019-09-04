@@ -19,13 +19,17 @@
   @include breakpoint($large) {
     float: left;
     width: calc(#{$right-sidebar-width-narrow} - 1em);
-    opacity: 0.75;
+
+    /*
+    >>>>>>> CTL turn off opacity toggle >>>>
+    opacity: 0.95;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
 
     &:hover {
       opacity: 1;
     }
+    */
 
     &.sticky {
       overflow-y: auto;
@@ -63,7 +67,7 @@
 
   img {
     width: 100%;
-    
+
     &.emoji {
       width: 20px;
       height: 20px;
@@ -127,7 +131,7 @@
   }
 
   img {
-    max-width: 110px;
+    max-width: 250px;
     border-radius: 50%;
 
     @include breakpoint($large) {
