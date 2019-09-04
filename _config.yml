@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark",
 locale                   : "en-US"
 title                    : "Christopher T. Lee"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Creative Solutions to Biophysical Challenges" # site tagline that appears below site title in masthead
 name                     : "Christopher T. Lee"
 description              : "Personal webpage"
 url                      : "https://ctlee.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -110,7 +110,7 @@ author:
   name             : "Christopher T. Lee"
   avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Hartwell Foundation Postdoctoral Fellow, Rangamani and Holst Labs"
-  location         : "University of California San Diego"
+  location         : "UC San Diego"
   email            : "ctlee@ucsd.edu"
   links:
     - label: "Email"
