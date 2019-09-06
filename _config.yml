@@ -307,16 +307,6 @@ defaults:
       read_time: false
       share: false
       related: false
-  # _teaching
-  # - scope:
-  #     path: ""
-  #     type: teaching
-  #   values:
-  #     layout: single
-  #     author_profile: true
-  #     read_time: false
-  #     share: false
-  #     related: false
   # _publications
   - scope:
       path: ""
@@ -337,13 +327,3 @@ defaults:
       read_time: true
       share: false
       related: false
-  # _talks
-  # - scope:
-  #     path: ""
-  #     type: talks
-  #   values:
-  #     layout: talk
-  #     author_profile: true
-  #     read_time: false
-  #     share: false
-  #     related: false
