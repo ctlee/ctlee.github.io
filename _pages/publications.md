@@ -21,7 +21,7 @@ classes: wide
 	{% endfor %}
 </ul>
 
-<h2>Peer Reviewed</h2>
+<h2>Peer Reviewed and In Press</h2>
 <ol>
 	{% assign sorted = site.publications | sort:'date' | reverse %}
 	{% for post in sorted %}

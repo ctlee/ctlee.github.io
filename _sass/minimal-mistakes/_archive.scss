@@ -83,6 +83,27 @@
   a {
     position: relative;
   }
+
+  /* CTL ADDED */
+  &-head {
+    float: left;
+    width: 110px;
+    font-size: $type-size-4;
+
+    @include breakpoint($small) {
+      width: span(2.3 of 12);
+    }
+  }
+  &-tail {
+    float: left;
+    width: calc(100% - 110px);
+    font-size: $type-size-4;
+
+    @include breakpoint($small) {
+      width: span(9.7 of 12);
+    }
+  }
+  /* CTL ADDED END */
 }
 
 .archive__item-teaser {

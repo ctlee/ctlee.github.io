@@ -14,15 +14,22 @@
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <li>
       <h3 class="archive__item-title" itemprop="headline">
-        {% if post.doi %}
-          <a href="{{ base_path }}{{ post.url }}">{{ title }}</a>&nbsp;&nbsp;<a href="http://dx.doi.org/{{ post.doi }}" rel="permalink"><i class="ai ai-doi ai-fw" aria-hidden="true" title="permalink"></i><span class="sr-only">DOI</span></a>
-        {% else %}
-          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-        {% endif %}
+        {{ title }}
       </h3>
-      {% if post.venue%}
-        <p class="archive__item-excerpt" itemprop="citation">{{ post.citation }}</p> 
-      {% endif %}
+        <p class="archive__item-excerpt" itemprop="citation">
+          {{ post.citation }}
+          <br/>
+          {% if post.doi %}
+            <a href="http://dx.doi.org/{{ post.doi }}" rel="permalink"><i class="ai ai-fw ai-doi ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">DOI</span></a>
+          {% endif %}
+          {% if post.arxiv %}
+            <a href="https://arxiv.org/abs/{{ post.arxiv }}" rel="permalink"><i class="ai ai-fw ai-arxiv-square ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">arXiv</span></a>
+          {% endif %}
+          {% if post.biorxiv %}
+            <a href="https://biorxiv.org/content/{{ post.biorxiv }}" rel="permalink"><i class="ai ai-fw ai-biorxiv-square ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">bioRxiv</span></a>
+          {% endif %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="more-info">More info &rarr;</a>
+        </p>
     </li>
  </article>
 </div>

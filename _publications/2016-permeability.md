@@ -1,7 +1,7 @@
 ---
 title: "Simulation-Based Approaches for Determining Membrane Permeability of Small Compounds"
 collection: publications
-permalink: /publications/2016-04-25-JCIM
+permalink: /publications/2016-permeability
 excerpt: ''
 date: 2016-04-25
 venue: 'Journal of Chemical Informatics and Modeling'

@@ -11,12 +11,14 @@ classes: wide
 [PDF Version](/files/CTL_CV.pdf){: .btn .btn--inverse .btn--small}
 
 <h2>Education</h2>
-* **2013-2018 (expected)**: Ph.D. Computational Chemistry \| _University of California, San Diego_
+* **2013-2019**: Ph.D. Computational Chemistry \| _University of California, San Diego_
 * **2011-2013**: M.S. Biochemistry \| _University of Virginia_
 * **2007-2011**: B.S. Chemistry & B.A. Computer Science \| _University of Virginia_
 
 <h2>Work Experience</h2>
-* **2013-Ongoing**: Graduate Research Associate
+* **2019-ongoing**: Hartwell Foundation Postdoctoral Fellow
+  * Padmini Rangamani and Michael J. Holst Labs
+* **2013-2019**: Graduate Research Associate
   * Rommie E. Amaro and J. Andrew McCammon Labs
   * Developed workflows to enable spatially resolved cellular and
     subcellular simulations of signaling cascades using real
@@ -32,6 +34,8 @@ classes: wide
   	topology, and parameter conversion software.
 
 <h2>Fellowships and Competitive Funding</h2>
+* **2019-2021**     Hartwell Foundation Postdoctoral Fellowship
+* **2019**          Schmidt Science Fellows Finalist
 * **Spring 2018**   UCSD Chem/Biochem Distinguished Graduate Fellowship
 * **2017-18**       San Diego Diversity Fellowship
 * **2017**          Biophysical Society Travel Award

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Creative solutions to biophysical challenges"
+title: "All About Chris"
 excerpt: "Homepage"
 author_profile: true
 permalink: /

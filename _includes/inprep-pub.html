@@ -14,14 +14,24 @@
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <li>
       <h3 class="archive__item-title" itemprop="headline">
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-        {% if post.doi %}
-          &nbsp;&nbsp;<a href="http://dx.doi.org/{{ post.doi }}" rel="permalink"><i class="ai ai-doi ai-fw" aria-hidden="true" title="permalink"></i><span class="sr-only">DOI</span></a>
-        {% elsif post.arxiv %}
-          &nbsp;&nbsp;<a href="http://arxiv.org/abs/{{ post.arxiv }}" rel="permalink"><i class="ai ai-arxiv ai-fw" aria-hidden="true" title="permalink"></i><span class="sr-only">arXiv</span></a>
-        {% endif %}
+        {{ title }}
       </h3>
-      <p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p>
+      <p class="archive__item-excerpt" itemprop="description">{{ post.authors }}.
+      {% if post.biorxiv %}
+        <i>bioRxiv</i>,
+      {% endif %}
+      <br/>
+        {% if post.doi %}
+          <a href="http://dx.doi.org/{{ post.doi }}" rel="permalink"><i class="ai ai-fw ai-doi ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">DOI</span></a>
+        {% endif %}
+        {% if post.arxiv %}
+          <a href="https://arxiv.org/abs/{{ post.arxiv }}" rel="permalink"><i class="ai ai-fw ai-arxiv-square ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">arXiv</span></a>
+        {% endif %}
+        {% if post.biorxiv %}
+          <a href="https://biorxiv.org/content/{{ post.biorxiv }}" rel="permalink"><i class="ai ai-fw ai-biorxiv-square ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">bioRxiv</span></a>
+        {% endif %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="more-info">More info &rarr;</a>
+      </p>
     </li>
  </article>
 </div>

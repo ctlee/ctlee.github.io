@@ -113,47 +113,34 @@ author:
   location         : "UC San Diego"
   email            : "ctlee@ucsd.edu"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:ctlee@ucsd.edu
+    - label: "Google Scholar"
+      icon: "ai ai-fw ai-google-scholar ai-lg"
+      url: "https://scholar.google.com/citations?user=oMawRCAAAAAJ"
+    - label: "ORCID"
+      icon: "ai ai-fw ai-orcid ai-lg"
+      url: "https://orcid.org/0000-0002-0670-2308"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github fa-lg"
+      url: "http://github.com/ctlee"
     - label: "LinkedIn"
-      icon: "fas fa-fw fa-link"
+      icon: "fab fa-fw fa-linkedin fa-lg"
       url: "https://www.linkedin.com/in/ctleeresearch/"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-twitter-square fa-lg"
       url: "https://twitter.com/CTleeRes"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "http://github.com/ctlee"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
   links:
+    - label: "Google Scholar"
+      icon: "ai ai-fw ai-google-scholar ai-lg"
+      url: "https://scholar.google.com/citations?user=oMawRCAAAAAJ"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/CTleeRes"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "fab fa-fw fa-github fa-lg"
       url: "http://github.com/ctlee"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-
 
 # Reading Files
 include:
