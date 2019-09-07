@@ -6,7 +6,7 @@ author_profile: true
 classes: wide
 ---
 
-<p><sup>&dagger;</sup> denotes joint authorship.
+<p><sup>&dagger;</sup> denotes joint authorship. <sup>$</sup> denotes corresponding author.
 {% if site.author.googlescholar %}
   You can also find a more updated list on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.
 {% endif %}
@@ -17,7 +17,7 @@ classes: wide
 <h2>Submitted and In Preparation</h2>
 <ul>
 	{% for post in site.inpreps reversed %}
-	  {% include inprep-pub.html %}
+	  {% include inprep-pub-item.html %}
 	{% endfor %}
 </ul>
 

@@ -1,5 +1,6 @@
 ---
 layout: default
+classes: wide
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -35,6 +36,21 @@ layout: default
             {% if page.read_time %}
               &emsp;<i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}
             {% endif %}
+
+            &emsp;<strong><i class="fas fa-fw fa-link" aria-hidden="true"></i>Links:</strong>
+            {% if page.doi %}
+              <a href="http://dx.doi.org/{{ page.doi }}" rel="permalink"><i class="ai ai-doi ai-2x" aria-hidden="true" title="permalink"></i><span class="sr-only">DOI</span></a>
+            {% endif %}
+            {% if page.arxiv %}
+              <a href="https://arxiv.org/abs/{{ page.arxiv }}" rel="permalink"><i class="ai ai-arxiv-square ai-2x" aria-hidden="true" title="permalink"></i><span class="sr-only">arXiv</span></a>
+            {% endif %}
+            {% if page.biorxiv %}
+              <a href="https://biorxiv.org/content/10.1101/{{ page.biorxiv }}" rel="permalink"><i class="ai ai-biorxiv-square ai-2x" aria-hidden="true" title="permalink"></i><span class="sr-only">bioRxiv</span></a>
+            {% endif %}
+            {% if page.chemrxiv %}
+              ChemRxiv:
+              <a href="https://dx.doi.org/{{ page.chemrxiv }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">ChemRxiv</span></a>
+            {% endif %}
           </p>
         </header>
       {% endunless %}
@@ -50,11 +66,19 @@ layout: default
         {% endif %}
         {{ content }}
 
-        {% if page.citation%}
-          <p class="small" itemprop="citation">
-            {{ page.citation }}
-          </p> 
-        {% endif %}
+        <p class="small" itemprop="citation">
+          <strong>Recommended citation: </strong>
+          {{ page.authors }} &quot;{{ page.title }}&quot;.
+          {% if page.biorxiv %}
+            <i>BioRxiv</i>: {{ page.biorxiv }}.
+          {% endif %}
+          {% if page.arxiv %}
+            <i>arXiv</i>: {{ page.arxiv }}.
+          {% endif %}
+          {% if page.chemrxiv %}
+            <i>ChemRxiv</i>: {{ page.chemrxiv }}.
+          {% endif %}
+        </p>
       </section>
 
 <!-- Jekyll doesn't support tags and categories for custom collections well... -->

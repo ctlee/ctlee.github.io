@@ -13,7 +13,7 @@ Using his training in both biochemistry and computer science, he develops and ap
 softwares to model and study the complexity of life.
 He is currently studying phenomena such as the regulation of synaptic plasticity and learning in dendritic spines.
 
-<!-- <h1>Latest Posts</h1>
+<h1>Latest Posts</h1>
 {% assign sorted = site.posts | sort:'date' | reverse %}
 <ul>
 {% for post in sorted limit:3%}
@@ -29,5 +29,5 @@ He is currently studying phenomena such as the regulation of synaptic plasticity
 	</div>
 {% endfor %}
 <ul>
-<a href="/blog/" class="back-to-top">More posts &rarr;</a> -->
+<a href="/blog/" class="back-to-top">More posts &rarr;</a>
 

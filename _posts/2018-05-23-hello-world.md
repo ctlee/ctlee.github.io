@@ -2,6 +2,10 @@
 layout: single
 title:  "Hello World"
 excerpt: "Welcome to my new personal website!"
+
+collection: posts
+permalink: /blog/hello-world
+twitter: true
 ---
 
 Hello World! Welcome to my new personal website. Over the past weekend I took

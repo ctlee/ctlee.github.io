@@ -17,16 +17,20 @@
         {{ title }}
       </h3>
         <p class="archive__item-excerpt" itemprop="citation">
-          {{ post.citation }}
-          <br/>
+          {{ post.authors }}<br/>
+          <i>{{ post.journal }}</i>, {{ post.date | date: "%Y" }}<br/>
           {% if post.doi %}
-            <a href="http://dx.doi.org/{{ post.doi }}" rel="permalink"><i class="ai ai-fw ai-doi ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">DOI</span></a>
+            <a href="http://dx.doi.org/{{ post.doi }}" rel="permalink"><i class="ai ai-doi ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">DOI</span></a>
           {% endif %}
           {% if post.arxiv %}
-            <a href="https://arxiv.org/abs/{{ post.arxiv }}" rel="permalink"><i class="ai ai-fw ai-arxiv-square ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">arXiv</span></a>
+            <a href="https://arxiv.org/abs/{{ post.arxiv }}" rel="permalink"><i class="ai ai-arxiv-square ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">arXiv</span></a>
           {% endif %}
           {% if post.biorxiv %}
-            <a href="https://biorxiv.org/content/{{ post.biorxiv }}" rel="permalink"><i class="ai ai-fw ai-biorxiv-square ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">bioRxiv</span></a>
+            <a href="https://biorxiv.org/content/10.1101/{{ post.biorxiv }}" rel="permalink"><i class="ai ai-biorxiv-square ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">bioRxiv</span></a>
+          {% endif %}
+          {% if post.chemrxiv %}
+            ChemRxiv:
+            <a href="https://dx.doi.org/{{ post.chemrxiv }}" rel="permalink"><i class="fa fa-fw fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">ChemRxiv</span></a>
           {% endif %}
           <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="more-info">More info &rarr;</a>
         </p>

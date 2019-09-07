@@ -1,5 +1,6 @@
 ---
 layout: default
+classes: wide
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -26,18 +27,28 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}
-            <h1 id="page-title" class="page__title" itemprop="headline">
-              {{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}
-              {% if page.doi %}
-                &nbsp;<a href="http://dx.doi.org/{{ page.doi }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-              {% endif %}
-            </h1>
-          {% endif %}
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            {{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}
+          </h1>
           <p class="page__meta">
             <strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>Published:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
             {% if page.read_time %}
               &emsp;<i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}
+            {% endif %}
+
+            &emsp;<strong><i class="fas fa-fw fa-link" aria-hidden="true"></i>Links:</strong>
+            {% if page.doi %}
+              <a href="http://dx.doi.org/{{ page.doi }}" rel="permalink"><i class="ai ai-doi ai-2x" aria-hidden="true" title="permalink"></i><span class="sr-only">DOI</span></a>
+            {% endif %}
+            {% if page.arxiv %}
+              <a href="https://arxiv.org/abs/{{ page.arxiv }}" rel="permalink"><i class="ai ai-arxiv-square ai-2x" aria-hidden="true" title="permalink"></i><span class="sr-only">arXiv</span></a>
+            {% endif %}
+            {% if page.biorxiv %}
+              <a href="https://biorxiv.org/content/10.1101/{{ page.biorxiv }}" rel="permalink"><i class="ai ai-biorxiv-square ai-2x" aria-hidden="true" title="permalink"></i><span class="sr-only">bioRxiv</span></a>
+            {% endif %}
+            {% if page.chemrxiv %}
+              ChemRxiv:
+              <a href="https://dx.doi.org/{{ page.chemrxiv }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">ChemRxiv</span></a>
             {% endif %}
           </p>
         </header>
@@ -53,12 +64,12 @@ layout: default
           </aside>
         {% endif %}
         {{ content }}
-      
+
         {% if page.citation%}
           <p class="small" itemprop="citation">
             <strong>Recommended citation: </strong>
-            {{ page.citation }}
-          </p> 
+            {{ page.authors }} &quot;{{ page.title }}&quot;. <i>{{ page.journal }}</i> {{ page.citation }}
+          </p>
         {% endif %}
       </section>
 

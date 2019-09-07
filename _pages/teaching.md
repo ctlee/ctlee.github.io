@@ -11,7 +11,7 @@ While these ideas are theoretically and conceptually great, the actual implement
 I believe that a powerful framework for creating a growth mindset and positive learning environment in STEM is to <b>"teach science like we do science"</b>.
 Using this framework I seek to empower others to become intellectuals (broadly defined, in this case, as those who love to creatively play with ideas) as well as teachers.
 
-My office is a not a stifling cubical of daily torture, but rather a magnificent playground where I get to creatively apply ideas and tools which I have mastered to attempt to solve hard problems faced by science and society.
+My office is a not a stifling cubicle of daily torture, but rather a magnificent playground where I get to creatively apply ideas and tools which I have mastered to attempt to solve hard problems faced by science and society.
 This is in stark contrast to elementary school, where I found little motivation in working on book problems with no apparent long-term goal or application for the knowledge I was assigned to learn.
 To teach science as we do science, I give students an unsolved problem -- such as computational predictions of protein-ligand affinity -- and we work together to equip them with the tools necessary to solve the problem.
 I do not necessarily embrace a single teaching modality such as active learning or flipped classroom, because in my experience the students become so motivated that they begin knowledge acquisition and exploration on their own.
