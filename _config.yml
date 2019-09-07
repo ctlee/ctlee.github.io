@@ -279,9 +279,6 @@ collections:
   inpreps:
     output: true
     permalink: /:collection/:path/
-  news:
-    output: false
-    permalink: /:collection/:path/
 
 
 # Defaults

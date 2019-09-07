@@ -1,9 +1,14 @@
 ---
 title: "Simulation-Based Approaches for Determining Membrane Permeability of Small Compounds"
-collection: talks
+
+authors: '<b>C. T. Lee</b>'
+
 type: "Talk"
-permalink: /talks/2016-03-01-UCSCS
 venue: "UC-wide Symposium for Chemical Sciences"
+
 date: 2016-03-01
 location: "Lake Arrowhead, California"
+
+collection: talks
+permalink: /talks/2016-UCSCS
 ---

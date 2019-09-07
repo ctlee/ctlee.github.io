@@ -4,7 +4,7 @@
 #
 # (c) 2016-2017 R. Stuart Geiger, released under the MIT license
 #
-# Run this from the _talks/ directory, which contains .md files of all your talks. 
+# Run this from the _talks/ directory, which contains .md files of all your talks.
 # This scrapes the location YAML field from each .md file, geolocates it with
 # geopy/Nominatim, and uses the getorg library to output data, HTML,
 # and Javascript for a standalone cluster map.
@@ -15,10 +15,10 @@ import glob
 import getorg
 from geopy import Nominatim
 
-g = glob.glob("*.md")
+g = glob.glob("_talks/*.md")
 
 
-geocoder = Nominatim(country_bias="United States of America")
+geocoder = Nominatim(user_agent="my-application")
 location_dict = {}
 location = ""
 permalink = ""
@@ -33,17 +33,13 @@ for file in g:
             lines_trim = lines[loc_start:]
             loc_end = lines_trim.find('"')
             location = lines_trim[:loc_end]
-            if location == "San Francisco, California":
-                location = "SF, California"
-                            
-           
-        location_dict[location] = geocoder.geocode(location, exactly_one=True, timeout=10)
+
+        location_dict[location] = geocoder.geocode(location)
         print(location, "\n", location_dict[location])
 
 
 m = getorg.orgmap.create_map_obj()
-getorg.orgmap.output_html_cluster_map(location_dict, folder_name="../talkmap", hashed_usernames=False)
-
+getorg.orgmap.output_html_cluster_map(location_dict, folder_name="./talkmap", hashed_usernames=False)
 
 
 
