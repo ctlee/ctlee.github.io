@@ -1,7 +1,7 @@
 ---
 title: "An Open Source Mesh Generation Platform for Biophysical Modeling Using Realistic Cellular Geometries"
 
-authors: '<b>C. T. Lee<sup>&dagger;,$</sup></b>, J. G. Laughlin, J. B. Moody, R. E. Amaro, J. A. McCammon, M. J. Holst, and P. Rangmani<sup>$</sup>'
+authors: '<b>C. T. Lee<sup>&dagger;,$</sup></b>, J. G. Laughlin, J. B. Moody, R. E. Amaro, J. A. McCammon, M. J. Holst, and P. Rangamani<sup>$</sup>'
 
 status: 'Submitted'
 
