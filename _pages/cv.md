@@ -8,7 +8,7 @@ redirect_from:
 classes: wide
 ---
 
-[PDF Version](/assets/files/CTL-CV.pdf){: .btn .btn--inverse .btn--small}
+[PDF Version](https://drive.google.com/file/d/1LPJx0k7CLqru35XLSchfl-oqAx2EudOT/view?usp=sharing){: .btn .btn--inverse .btn--small}
 
 <h2>Education</h2>
 * **2019**: Ph.D. Chemistry \| _University of California, San Diego_
