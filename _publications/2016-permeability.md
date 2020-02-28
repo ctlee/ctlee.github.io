@@ -9,7 +9,7 @@ citation: '56.4 (April 2016), pp. 721–733.'
 
 date: 2016-04-25
 
-xcerpt: ''
+excerpt: ''
 
 collection: publications
 permalink: /publications/2016-permeability
