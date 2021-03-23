@@ -33,9 +33,6 @@ classes: wide
           {% endif %}
           <p class="page__meta">
             <strong></i>Status:</strong> {{ page.status }}
-            {% if page.read_time %}
-              &emsp;<i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}
-            {% endif %}
 
             &emsp;<strong><i class="fas fa-fw fa-link" aria-hidden="true"></i>Links:</strong>
             {% if page.doi %}

@@ -32,9 +32,6 @@ classes: wide
           </h1>
           <p class="page__meta">
             <strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>Published:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-            {% if page.read_time %}
-              &emsp;<i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}
-            {% endif %}
 
             &emsp;<strong><i class="fas fa-fw fa-link" aria-hidden="true"></i>Links:</strong>
             {% if page.doi %}
