@@ -10,7 +10,9 @@ classes: wide
 {% if site.author.googlescholar %}
 	You can also find my articles on my more frequently updated <a href="{{site.author.googlescholar}}">Google Scholar</a> profile.<br/>
 {% endif %}
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>*</sup> denotes equal contribution, <sup>$</sup> denotes corresponding author
+<strong>Key:</strong> Icons link to DOI <i class="ai ai-doi" aria-hidden="true" title="permalink"></i>, biorxiv <i class="ai ai-biorxiv-square" aria-hidden="true" title="permalink"></i>, arxiv <i class="ai ai-arxiv-square" aria-hidden="true" title="permalink"></i>;<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>*</sup> denotes equal contribution; <sup>$</sup> denotes corresponding author<br/> 
+
 </p>
 
 <h2>Submitted and In Preparation</h2>
