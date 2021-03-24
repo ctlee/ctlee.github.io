@@ -101,19 +101,19 @@ author:
   email            : "ctlee@ucsd.edu"
   links:
     - label: "Google Scholar"
-      icon: "ai ai-fw ai-google-scholar ai-lg"
+      icon: "ai ai-fw ai-google-scholar" # ai-lg"
       url: "https://scholar.google.com/citations?user=oMawRCAAAAAJ"
     - label: "ORCID"
-      icon: "ai ai-fw ai-orcid ai-lg"
+      icon: "ai ai-fw ai-orcid" # ai-lg"
       url: "https://orcid.org/0000-0002-0670-2308"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github fa-lg"
+      icon: "fab fa-fw fa-github" # fa-lg"
       url: "http://github.com/ctlee"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin fa-lg"
+      icon: "fab fa-fw fa-linkedin" # fa-lg"
       url: "https://www.linkedin.com/in/ctleeresearch/"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square fa-lg"
+      icon: "fab fa-fw fa-twitter-square" # fa-lg"
       url: "https://twitter.com/CTleeRes"
 
 # Site Footer
@@ -288,7 +288,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: false
+      # read_time: false
       share: false
       related: false
   # _publications
@@ -298,7 +298,7 @@ defaults:
     values:
       layout: publication
       author_profile: true
-      read_time: true
+      # read_time: true
       share: true
       related: false
   # _inpreps
@@ -307,7 +307,7 @@ defaults:
       type: inpreps
     values:
       layout: inprep
-      author_profile: true
+      # author_profile: true
       read_time: true
       share: false
       related: false

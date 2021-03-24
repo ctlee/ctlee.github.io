@@ -14,9 +14,9 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <li>
-      <h3 class="archive__item-title" itemprop="headline">
-        {{ title }}
-      </h3>
+      <div class="archive__item-title" itemprop="headline">
+        <strong>{{ title }}</strong>
+      </div>
         <p class="archive__item-excerpt" itemprop="citation">
           <i class="fas fa-map-marker-alt" aria-hidden="true"></i>&nbsp;<i>{{ post.venue }}</i>
           &emsp;<i class="fas fa-calendar-alt" aria-hidden="true"></i><time datetime="{{ post.date | date_to_xmlschema }}">&nbsp;{{ post.date | date: "%B %Y" }}</time>

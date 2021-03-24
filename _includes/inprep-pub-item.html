@@ -13,12 +13,15 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <li>
-      <h3 class="archive__item-title" itemprop="headline">
-        {{ title }}
-      </h3>
+      <div class="archive__item-title" itemprop="headline">
+        <strong>{{ title }}</strong>
+      </div>
       <p class="archive__item-excerpt" itemprop="description">
         {{ post.authors }}<br/>
-        <i>{{ post.status }}</i><br/>
+        <strong>Status:</strong> {{ post.status }} &nbsp;&nbsp;&nbsp;
+        {% if post.doi or post.arxiv or post.biorxiv or post.chemrxiv %}
+        <strong>Preprints:</strong>
+        {% endif %}
         {% if post.doi %}
           <a href="http://dx.doi.org/{{ post.doi }}" rel="permalink"><i class="ai ai-doi ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">DOI</span></a>
         {% endif %}
@@ -31,6 +34,7 @@
         {% if post.chemrxiv %}
           <a href="https://dx.doi.org/{{ post.chemrxiv }}" rel="permalink">ChemRxiv</a>
         {% endif %}
+
         <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="more-info">More info &rarr;</a>
       </p>
     </li>
