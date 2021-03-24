@@ -6,12 +6,12 @@ author_profile: true
 classes: wide
 ---
 
-<p><sup>*</sup> equal contribution. <sup>$</sup> corresponding author.
+<p>
 {% if site.author.googlescholar %}
-  You can also find a more updated list on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.
+	You can also find my articles on my more frequently updated <a href="{{site.author.googlescholar}}">Google Scholar</a> profile.<br/>
 {% endif %}
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>*</sup> denotes equal contribution, <sup>$</sup> denotes corresponding author
 </p>
-[Sorted by year]({{ base_path }}by-year/){: .btn .btn--inverse .btn--small}
 
 <h2>Submitted and In Preparation</h2>
 <ul>
@@ -21,6 +21,7 @@ classes: wide
 </ul>
 
 <h2>Peer Reviewed and In Press</h2>
+[Sorted by year]({{ base_path }}by-year/){: .btn .btn--inverse .btn--small}
 <ol>
 	{% assign sorted = site.publications | sort:'date' | reverse %}
 	{% for post in sorted %}
