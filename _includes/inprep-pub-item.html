@@ -20,7 +20,7 @@
         {{ post.authors }}<br/>
         <strong>Status:</strong> {{ post.status }} &nbsp;&nbsp;&nbsp;
         {% if post.doi or post.arxiv or post.biorxiv or post.chemrxiv %}
-        <strong>Preprints:</strong>
+        <strong>Preprint:</strong>
         {% endif %}
         {% if post.doi %}
           <a href="http://dx.doi.org/{{ post.doi }}" rel="permalink"><i class="ai ai-doi ai-lg" aria-hidden="true" title="permalink"></i><span class="sr-only">DOI</span></a>

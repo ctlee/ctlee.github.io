@@ -261,9 +261,9 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  talks:
-    output: false
-    permalink: /:collection/:path/
+  # talks:
+  #   output: false
+  #   permalink: /:collection/:path/
   inpreps:
     output: true
     permalink: /:collection/:path/
@@ -307,7 +307,7 @@ defaults:
       type: inpreps
     values:
       layout: inprep
-      # author_profile: true
-      read_time: true
+      author_profile: true
+      # read_time: true
       share: false
       related: false
